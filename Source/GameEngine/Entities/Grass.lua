@@ -1,3 +1,4 @@
+require("GameEngine.Helper.ContentLoader")
 Grass = {}
 
 function Grass:new (o)
@@ -14,6 +15,7 @@ function Grass:load (x, y)
     self.x = x
     self.y = y
     self.texture = love.graphics.newImage("Content/Grass.jpg")
+    -- self.texture = ContentLoader.GrassTexture
 end
 
 function Grass:draw ()
