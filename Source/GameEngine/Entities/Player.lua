@@ -8,7 +8,7 @@ function Player:new (o)
 end
 
 function Player:load ()
-    self.texture = love.graphics.newImage("Content/mario.png")
+    self.texture = love.graphics.newImage("Content/character.png")
     self.x = x
     self.y = y
 end
