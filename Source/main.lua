@@ -3,7 +3,7 @@ require("GameEngine.Screen.ScreenManager")
 ScreenManager = ScreenManager:new()
 
 function love.load ()
-    love.window.setMode(1000, 1000)
+    love.window.setMode(640, 480)
 end
 
 function love.draw ()
