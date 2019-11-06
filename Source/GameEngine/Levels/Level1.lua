@@ -1,4 +1,5 @@
 require("GameEngine.Entities.Grass")
+require("GameEngine.Entities.Player")
 Level1 = {}
 
 function Level1:new (o)
@@ -14,6 +15,8 @@ function Level1:new (o)
             self.grid[i][j] = newGrass
         end
       end
+    self.newPlayer = Player:new()
+    self.newPlayer:load()
     return o
 end
 
@@ -26,7 +29,9 @@ function Level1:draw ()
             self.grid[i][j]:draw()
         end
       end
+      self.newPlayer:draw()
 end
 
 function Level1:update (dt)
+    self.newPlayer:update(dt)
 end

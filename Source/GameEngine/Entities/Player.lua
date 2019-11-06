@@ -9,12 +9,13 @@ end
 
 function Player:load ()
     self.texture = love.graphics.newImage("Content/character.png")
-    self.x = x
-    self.y = y
+    self.x = 50
+    self.y = 50
+    self.quad = love.graphics.newQuad(0, 7, 16, 20, self.texture:getDimensions())
 end
 
 function Player:draw ()
-    love.graphics.draw(self.texture, self.x, self.y, 0, 0.1, 0.1)
+    love.graphics.draw(self.texture, self.quad, self.x, self.y)
 end
 
 function Player:update (dt)
