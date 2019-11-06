@@ -1,9 +1,7 @@
 require("GameEngine.Entities.Grass")
-<<<<<<< HEAD
 require("GameEngine.Entities.Home")
-=======
 require("GameEngine.Entities.Tree")
->>>>>>> origin/tree
+require("GameEngine.Entities.Player")
 Level1 = {}
 
 function Level1:new (o)
@@ -19,13 +17,13 @@ function Level1:new (o)
             self.grid[i][j] = newGrass
         end
       end
-<<<<<<< HEAD
       self.newHome = Home:new()
       self.newHome:load(200, 200)
-=======
     self.newTree = Tree:new()
     self.newTree:load(50, 30)
->>>>>>> origin/tree
+
+    self.newPlayer = Player:new()
+    self.newPlayer:load()
     return o
 end
 
@@ -38,12 +36,11 @@ function Level1:draw ()
             self.grid[i][j]:draw()
         end
       end
-<<<<<<< HEAD
     self.newHome:draw ()
-=======
     self.newTree:draw()
->>>>>>> origin/tree
+      self.newPlayer:draw()
 end
 
 function Level1:update (dt)
+    self.newPlayer:update(dt)
 end
