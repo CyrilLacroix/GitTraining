@@ -1,4 +1,5 @@
 require("GameEngine.Entities.Grass")
+require("GameEngine.Entities.Home")
 Level1 = {}
 
 function Level1:new (o)
@@ -14,6 +15,8 @@ function Level1:new (o)
             self.grid[i][j] = newGrass
         end
       end
+      self.newHome = Home:new()
+      self.newHome:load(200, 200)
     return o
 end
 
@@ -26,6 +29,7 @@ function Level1:draw ()
             self.grid[i][j]:draw()
         end
       end
+    self.newHome:draw ()
 end
 
 function Level1:update (dt)
