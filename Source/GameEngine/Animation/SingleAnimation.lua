@@ -15,3 +15,5 @@ end
 
 function SingleAnimation:update (dt)
 end
+
+-- SingleAnimation in GameEngine | STI
