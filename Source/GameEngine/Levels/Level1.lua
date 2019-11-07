@@ -28,9 +28,11 @@ function Level1:new (o)
 end
 
 function Level1:load ()
+    -- css commentaires inutiles
 end
 
 function Level1:draw ()
+    -- css commentaires inutiles
     for i=0, 40 do
         for j=0, 30 do
             self.grid[i][j]:draw()
@@ -42,5 +44,6 @@ function Level1:draw ()
 end
 
 function Level1:update (dt)
+    -- css commentaires inutiles
     self.newPlayer:update(dt)
 end
