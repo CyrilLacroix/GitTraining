@@ -9,11 +9,14 @@ function HomeScreen:new (o)
 end
 
 function HomeScreen:load ()
+    -- Button !!!!
 end
 
 function HomeScreen:draw ()
     love.graphics.print(self.title, 0, 0)
+    -- Button !!!!
 end
 
 function HomeScreen:update (dt)
+    -- Button !!!!
 end
