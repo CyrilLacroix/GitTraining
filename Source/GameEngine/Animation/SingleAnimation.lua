@@ -7,6 +7,8 @@ function SingleAnimation:new (o)
     return o
 end
 
+# Fix singleanimation 1
+
 function SingleAnimation:load ()
 end
 
