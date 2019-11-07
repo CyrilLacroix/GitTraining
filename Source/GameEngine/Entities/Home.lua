@@ -1,6 +1,6 @@
 require("GameEngine.Helper.ContentLoader")
 Home = {}
-
+-- Modification effectuée
 function Home:new (o)
     o = o or {}
     setmetatable(o, self)
@@ -10,8 +10,9 @@ function Home:new (o)
     self.x = 0
     self.y = 0
     return o
+    -- Modification effectuée
 end
-
+-- Modification effectuée
 function Home:load (x, y)
     self.x = x
     self.y = y
@@ -21,9 +22,10 @@ function Home:load (x, y)
 end
 
 function Home:draw ()
+    -- Modification effectuée
     -- love.graphics.draw(self.texture, self.x, self.y)
     love.graphics.draw(self.texture, self.quad, self.x, self.y)
 end
-
+-- Modification effectuée
 function Home:update (dt)
 end
