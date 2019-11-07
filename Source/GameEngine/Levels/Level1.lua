@@ -16,9 +16,9 @@ function Level1:new (o)
             newGrass:load(i * 16, j * 16)
             self.grid[i][j] = newGrass
         end
-      end
-      self.newHome = Home:new()
-      self.newHome:load(200, 200)
+    end
+    self.newHome = Home:new()
+    self.newHome:load(200, 200)
     self.newTree = Tree:new()
     self.newTree:load(50, 30)
 
@@ -35,10 +35,10 @@ function Level1:draw ()
         for j=0, 30 do
             self.grid[i][j]:draw()
         end
-      end
+    end
     self.newHome:draw ()
     self.newTree:draw()
-      self.newPlayer:draw()
+    self.newPlayer:draw()
 end
 
 function Level1:update (dt)
