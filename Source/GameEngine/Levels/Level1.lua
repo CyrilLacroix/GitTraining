@@ -3,11 +3,12 @@ require("GameEngine.Entities.Home")
 require("GameEngine.Entities.Tree")
 require("GameEngine.Entities.Player")
 Level1 = {}
-
+-- Hotfix
 function Level1:new (o)
     o = o or {}
     setmetatable(o, self)
     self.__index = self
+    -- Hotfix
     self.grid = {}
     for i=0, 40 do
         self.grid[i] = {}     -- create a new row
@@ -21,7 +22,7 @@ function Level1:new (o)
     self.newHome:load(200, 200)
     self.newTree = Tree:new()
     self.newTree:load(50, 30)
-
+    -- Hotfix
     self.newPlayer = Player:new()
     self.newPlayer:load()
     return o
@@ -42,7 +43,7 @@ function Level1:draw ()
     self.newTree:draw()
     self.newPlayer:draw()
 end
-
+    -- Hotfix
 function Level1:update (dt)
     -- css commentaires inutiles
     self.newPlayer:update(dt)
