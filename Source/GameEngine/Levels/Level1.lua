@@ -1,6 +1,5 @@
 require("GameEngine.Entities.Grass")
 require("GameEngine.Entities.Home")
-require("GameEngine.Entities.Tree")
 require("GameEngine.Entities.Player")
 Level1 = {}
 
@@ -19,8 +18,6 @@ function Level1:new (o)
       end
       self.newHome = Home:new()
       self.newHome:load(200, 200)
-    self.newTree = Tree:new()
-    self.newTree:load(50, 30)
 
     self.newPlayer = Player:new()
     self.newPlayer:load()
@@ -37,7 +34,6 @@ function Level1:draw ()
         end
       end
     self.newHome:draw ()
-    self.newTree:draw()
       self.newPlayer:draw()
 end
 
